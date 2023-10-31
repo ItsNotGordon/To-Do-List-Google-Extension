@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, { useState } from 'react'
 // import './App.css'
 import Nav from './Nav';
-import MainPage from './MainPage.jsx'
+import MainPage from './MainPage.js'
 
 
 function App() {
