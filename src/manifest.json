@@ -6,6 +6,9 @@
     "action": {
         "default_popup": "popup.html"
     },
+    "permissions": [
+        "storage"
+    ],
     "default_locale": "en",
     "description": "A quick to-do list built into Google Chrome",
 
