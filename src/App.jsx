@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 // import './App.css'
 import Nav from './Nav';
 import MainPage from './MainPage.jsx'
+import TaskList from './TaskList.jsx'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <div className = 'container'>
           <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="tasks" element={<TaskList />} />
           </Routes>
         </div>
     </BrowserRouter>

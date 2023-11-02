@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 let storedTasks = data.tasks
                 storedTasks.push(taskText)
                 chrome.storage.sync.set({tasks: storedTasks})
+                chrome.runtime.sendMessage({ tasks: storedTasks }, function(response) {
+                    console.log('Tasks sent to the React app');
+                });
             })
 
         }
